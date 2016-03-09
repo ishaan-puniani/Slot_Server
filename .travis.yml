@@ -8,3 +8,4 @@ matrix:
 before_script:
   - npm install -g grunt-cli
   - npm install
+  - npm install babel-register
