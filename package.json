@@ -45,5 +45,5 @@
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
-  { "license": "(MIT OR Apache-2.0)" }
+  "license": "(MIT OR Apache-2.0)" 
 }
