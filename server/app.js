@@ -5,8 +5,8 @@
 'use strict';
 
 
-require('./api/thing')(app);
+var init = require('./api/init');
 
 
 // Expose app
-exports = module.exports = app;
+exports = module.exports = {init :init };
