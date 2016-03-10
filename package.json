@@ -1,6 +1,6 @@
 {
   "name": "Slot_Server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "server/app.js",
   "dependencies": {
     "lodash": "^3.10.1"    
@@ -33,7 +33,8 @@
     "chai-things": "^0.2.0",
     "sinon-chai": "^2.8.0",
     "mocha": "^2.2.5",
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+	"mersenne-twister": "1.0.1"
     
   },
   "engines": {
