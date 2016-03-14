@@ -4,9 +4,8 @@
 
 'use strict';
 
-
-var init = require('./api/init');
-
-
 // Expose app
-exports = module.exports = {init :init };
+exports = module.exports = {
+    init :require('./api/init'),
+    spin:require('./api/spin')
+};
