@@ -25,5 +25,18 @@ describe('Init Response Of the game:', function () {
             expect(response.betlines).to.be.an('array');
             expect(response.betlines).to.eql(betlines.betlines);
         });
+        it('should return initial response with bet amount 0 ', function () {
+            var response = api();
+            expect(response.bet).to.eql(0);
+        });
+        it('should return initial response with win amount 0 ', function () {
+            var response = api();
+            expect(response.win).to.eql(0);
+        });
+        it('should return initial response with roundOver to true ', function () {
+            var response = api();
+            expect(response).to.include.keys('roundOver');
+            expect(response.roundOver).to.eql(true);
+        });
     });
 });
