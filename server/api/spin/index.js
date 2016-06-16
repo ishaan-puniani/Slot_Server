@@ -6,6 +6,8 @@ var generator = new MersenneTwister();
 var reelset = require('../../config/reelset');
 
 function spin(game) {
+    console.log("SlotServer")
+	console.log(game)
     //   var target = Math.floor(generator.random() * 10);
     var reelset_0  = reelset.reels[0];
     var reelset_1  = reelset.reels[1];
@@ -13,12 +15,12 @@ function spin(game) {
     
     return {
         roundOver:true,
-        bet:game.bet,
-        win:game.bet * 2,
+        //bet:game.bet,
+        win:2,
         symbols: [
             reelset_0[Math.floor(generator.random() * reelset_0.length)], 
             reelset_1[Math.floor(generator.random() * reelset_1.length)], 
-            reelset_2[Math.floor(generator.random() * reelset_2.length)]
+            reelset_2[Math.floor(generator.random() * reelset_2.length)],
         ]
     }
 }
