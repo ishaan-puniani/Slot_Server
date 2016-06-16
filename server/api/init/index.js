@@ -2,14 +2,12 @@
 var reelset = require('../../config/reelset');
 var betlines = require('../../config/betlines');
 
-function init(game) {
-
+function init() {
     return {
-        roundOver:true,
-        bet:0,
-        win:0,
         symbols: reelset.initial,
-        betlines:betlines.betlines
+        betlines:betlines.betlines,
+        win:0,
+        roundOver:true
     }
 }
 
