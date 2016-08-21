@@ -1,4 +1,4 @@
-/* 
+/*
  * The MIT License
  *
  * Copyright 2016 ishaan.puniani.
@@ -23,12 +23,57 @@
  */
 'use strict';
 module.exports = {
+  basic: {
     reels: [
-        ["SYM1", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM9", "SYM10", "SYM11", "SYM12"],
-        ["SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM9", "SYM10", "SYM11", "SYM12", "SYM1"],
-        ["SYM5", "SYM6", "SYM7", "SYM8", "SYM9", "SYM10", "SYM11", "SYM12", "SYM1", "SYM3", "SYM4"]
+      ["SYM3", "SYM3", "SYM3", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM4", "SYM4", "SYM4", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM5", "SYM5", "SYM5", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM6", "SYM6", "SYM6", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM7", "SYM7", "SYM7", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"]
     ],
-    initial: ["SYM1", "SYM13", "SYM6"]
+    initial: [
+      ["SYM7", "SYM8", "SYM8", "SYM8"],
+      ["SYM3", "SYM3", "SYM3", "SYM7"],
+      ["SYM3", "SYM3", "SYM4", "SYM4"],
+      ["SYM3", "SYM3", "SYM6", "SYM6"],
+      ["SYM8", "SYM8", "SYM8", "SYM8"]
+    ]
+
+  },
+  respin: {
+    reels: [
+      ["SYM3", "SYM3", "SYM3", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM4", "SYM4", "SYM4", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM5", "SYM5", "SYM5", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM6", "SYM6", "SYM6", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM7", "SYM7", "SYM7", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"]
+    ],
+    initial: [
+      ["SYM11", "SYM8", "SYM8", "SYM8"],
+      ["SYM3", "SYM3", "SYM3", "SYM3"],
+      ["SYM5", "SYM3", "SYM3", "SYM3"],
+      ["SYM9", "SYM3", "SYM3", "SYM3"],
+      ["SYM6", "SYM6", "SYM6", "SYM6"]
+    ]
+
+  },
+  freespin: {
+    reels: [
+      ["SYM3", "SYM3", "SYM3", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM4", "SYM4", "SYM4", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM5", "SYM5", "SYM5", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM6", "SYM6", "SYM6", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"],
+      ["SYM7", "SYM7", "SYM7", "SYM0", "SYM9", "SYM3", "SYM4", "SYM5", "SYM6", "SYM7", "SYM8", "SYM1", "SYM10", "SYM11", "SYM12"]
+    ],
+    initial: [
+      ["SYM11", "SYM8", "SYM8", "SYM8"],
+      ["SYM3", "SYM3", "SYM3", "SYM3"],
+      ["SYM5", "SYM3", "SYM3", "SYM3"],
+      ["SYM9", "SYM3", "SYM3", "SYM3"],
+      ["SYM6", "SYM6", "SYM6", "SYM6"]
+    ]
+
+  }
 
 };
 
