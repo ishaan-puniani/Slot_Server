@@ -18,9 +18,9 @@ function spin(game) {
         //bet:game.bet,
         win:2,
         symbols: [
-            reelset_0[Math.floor(generator.random() * reelset_0.length)], 
-            reelset_1[Math.floor(generator.random() * reelset_1.length)], 
-            reelset_2[Math.floor(generator.random() * reelset_2.length)],
+            reelset_0[0], 
+            reelset_1[1], 
+            reelset_2[2],
         ]
     }
 }
